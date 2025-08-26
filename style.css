@@ -1,0 +1,14 @@
+ul{
+    list-style: none;
+    padding: 0;
+}
+.color{
+    color: black;
+    background-color: grey;
+    padding: 10px;
+}
+.color-two{
+    color: white;
+    background-color: rgb(108, 108, 108);
+    padding: 10px;
+}
