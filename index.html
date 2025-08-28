@@ -5,23 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="./app.js" defer></script>
-    <title>Document</title>
+    <title>Lista de Tareas</title>
 </head>
 
 <body>
-    
-    <div id="root"></div>
-    <div class="root"></div>
-    <div name="root"></div>
-    <div>En medio</div>
-    <div>
-        <div>
-            Hola 
-        </div>
+    <div id="task-manager">
+        <h1>Administrador de tareas</h1>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Escriba una nueva tarea" />
+        </form>
+        <ul id="task-list">
+            <li>
+                Tarea de ejemplo 1
+                <span class="delete-btn">❌</span>
+            </li>
+            <li>
+                Tarea de ejemplo 2
+                <span class="delete-btn">❌</span>
+            </li>
+            <li>
+              bañar al gato de Verónica 3
+                <span class="delete-btn">❌</span>
+            </li>
+        </ul>
     </div>
 
 
+    <script src="app.js"></script>
 </body>
 
 </html>

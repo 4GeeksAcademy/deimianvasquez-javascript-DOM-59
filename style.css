@@ -1,14 +1,54 @@
-ul{
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 0;
+}
+
+#task-manager {
+    background: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+#task-input {
+    padding: 10px;
+    width: 100%;
+    margin-right: 10px;
+}
+
+#task-list {
     list-style: none;
     padding: 0;
 }
-.color{
-    color: black;
-    background-color: grey;
+
+#task-list li {
+    background: #eee;
     padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    position: relative;
 }
-.color-two{
-    color: white;
-    background-color: rgb(108, 108, 108);
-    padding: 10px;
+
+#task-list li span {
+    position: absolute;
+    border: 1px solid black;
+    inset: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 10px;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+#task-list li span:hover {
+    opacity: 1;
 }
